@@ -1,0 +1,85 @@
+/* style_message.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.user-list {
+    width: 25%;
+    background: #2c3e50;
+    color: white;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.user-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.user-list ul li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #34495e;
+}
+
+.user-list ul li:hover {
+    background: #34495e;
+}
+
+.chat-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#chat-area {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #ecf0f1;
+}
+
+.message-input {
+    display: flex;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.message-input button {
+    padding: 10px;
+    background: #2980b9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.message-input button:hover {
+    background: #1f618d;
+}

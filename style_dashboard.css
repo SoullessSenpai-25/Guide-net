@@ -1,0 +1,215 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b5a3f0;
+    margin: 0;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.task-bar {
+    width: 100%;
+    height: 60px;
+    background-color: #342f47;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+.task-bar img {
+    height: 30px;
+    width: 30px;
+}
+.task-bar h1 {
+    color: #fff;
+    font-size: 20px;
+    margin: 0;
+}
+.nav-bar {
+    width: 250px;
+    background-color: #342f47;
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.face-card {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #4a3d63;
+    border-radius: 8px;
+    margin: 0 10px 20px;
+}
+.face-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.face-card .user-info {
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+}
+.face-card .user-info h2 {
+    margin: 0;
+    font-size: 18px;
+}
+.face-card .user-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #d1d1d1;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 20px;
+    font-family:'Nunito', sans-serif;
+    font-size: 16px;
+    display: block;
+    transition: background-color 0.3s;
+}
+.nav-bar a:hover {
+    background-color: #4a3d63;
+}
+ul .dropdown li {
+    display: block;
+}
+ul .dropdown {
+    width: 100%;
+    background: #4a3d63;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+.dashboard-container {
+    margin-left: 270px;
+    margin-top: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    background: rgba(153, 154, 218, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+}
+h1 {
+    text-align: center;
+    color: #342f47;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    margin-left: 370px;
+    font-family: 'Nunito', sans-serif;
+}
+    .card {
+        background: rgb(250, 250, 250);
+        border-radius: 1rem;
+        padding: 2rem;
+        width: 100%;
+        max-width: 24rem;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        align-self: center;
+        margin-left: -100 px;
+    }
+    
+    .profile-container {
+        position: relative;
+        width: 8rem;
+        height: 8rem;
+        margin: 0 auto 1.5rem;
+        align-items: center;
+    }
+    
+    .profile-image {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    }
+    
+    .star-badge {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #3b82f6;
+        color: white;
+        padding: 0.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .name {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1f2937;
+        margin-bottom: 0.25rem;
+    }
+    
+    .title {
+        color: #6b7280;
+        margin-bottom: 1.5rem;
+    }
+    
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+    .social-icon {
+        padding: 0.5rem;
+        border-radius: 50%;
+        color: #4b5563;
+        transition: background-color 0.2s;
+    }
+    
+    .social-icon:hover {
+        background-color: #f3f4f6;
+    }
+    
+    .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    
+    .stat {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .stat-value {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #1f2937;
+    }
+    
+    .stat-label {
+        font-size: 0.875rem;
+        line-height: 1.25;
+    }
+    
+    .highlight {
+        color: #3b82f6;
+    }

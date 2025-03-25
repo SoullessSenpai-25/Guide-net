@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuideNet - Dashboard</title>
+    <link rel="stylesheet" href="style_dashboard.css">
+    <link rel="stylesheet" href="style_fc_dashboard.css">
+    <link rel="stylesheet" href="style_search.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Search Overlay -->
+    <div id="searchOverlay" class="search-overlay">
+        <div class="search-container">
+            <div class="search-header">
+                <input type="text" id="searchInput" placeholder="Search users...">
+                <button id="closeSearch" class="close-search">
+                    <i class="material-icons">close</i>
+                </button>
+            </div>
+            <div id="searchResults" class="search-results"></div>
+        </div>
+    </div>
+    <div class="task-bar">
+        <img src="img/logo.png" alt="GuideNet Logo">
+        <h1>GuideNet</h1>
+    </div>
+    <div class="nav-bar">
+        <div class="face-card">
+            <img src="img/samples/k.jpg" alt="User Profile Picture">
+            <!--<span class="status"></span>-->
+            <div class="user-info">
+                <h2>SRK</h2>
+                <p>Active</p>
+            </div>
+        </div>
+        <a href="#">Profile</a>
+        <!--
+            <ul class="dropdown">
+                <li><a href="test1_personal.html">Personal</a></li>
+                <li><a href="#">Academics</a></li>
+                <li><a href="#">Additional</a></li>
+            </ul>
+        -->
+        <a href="#message">Message</a>
+        <a href="#search" id="searchButton">Search</a>
+        <a href="#recommendations">Recommendations</a>
+        <a href="settings.html">Settings</a>
+        <a href="#logout">Logout</a>
+    </div>
+    <!--
+    <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <div class="card-container">
+            <div class="card">
+                <div class="profile-container">
+        
+                    <img src="img/samples/k.jpg" alt="Profile" class="profile-image">
+                </div>
+        
+                <h1 class="name">SRK</h1>
+                <p class="title">Student @ Chhapra University</p>
+        
+                <div class="social-links">
+                    <a href="#" class="social-icon">
+                        <i class="material-icons">call</i>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon">
+                        <i class="material-icons">mail</i>
+                    </a>
+                </div>
+        
+                <div class="stats">
+                    
+                    <div class="stat">
+                        <span class="stat-value">4</span>
+                        <span class="stat-label"><span class="highlight">B.Tech</span><br>Years</span>
+                    </div>
+                    
+                    <div class="stat">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label"><span class="highlight">Frontend</span><br>Years</span>
+                    </div>
+                    
+                    <div class="stat">
+                        <span class="stat-value">2</span>
+                        <span class="stat-label"><span class="highlight">Internships</span><br>2 months & 6 months</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+<div class="dashboard-container">
+    <!-- Main Content -->
+    <div class="main-content">
+        <div class="dashboard-header">
+          <h1>Welcome to Your Dashboard</h1>
+          <p class="page-indicator">Page <span id="current-page">1</span> of <span id="total-pages">10</span></p>
+        </div>
+
+        <div id="facecards-container" class="facecards-container">
+          <!-- Facecards will be loaded dynamically with JavaScript -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+          <!-- Pagination will be generated with JavaScript -->
+        </div>
+      </div>
+</div>
+    <script src="script_search.js"></script>
+    <script src="script_fc_dashboard.js"></script>
+</body>
+</html>
